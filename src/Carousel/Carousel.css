@@ -1,0 +1,17 @@
+.slideShow{
+    width: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.slideshowSlider{
+    transition: ease 1000ms;
+    background: red;
+    white-space: nowrap;
+}
+
+.slide{
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+}
