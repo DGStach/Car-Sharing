@@ -1,11 +1,11 @@
 import './App.css';
 import React from "react";
-import {Carousel} from "./Carousel/Carousel";
+import CarCarousel from "./CarCarousel/CarCarousel";
 
 function App() {
   return (
     <div className="App">
-        <Carousel/>
+        <CarCarousel/>
     </div>
   );
 }
