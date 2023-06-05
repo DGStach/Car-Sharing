@@ -13,14 +13,11 @@ const CarCarousel = () => {
         {adres: require("./Icons/car7.webp"), title: "Tesla Model 3"},
         {adres: require("./Icons/car8.webp"), title: "Toyota Yaris IV"}
     ];
-
-    console.log(Icons[0].adres)
-
     return (
-        <Carousel autoPlay infiniteLoop showArrows>
+        <Carousel autoPlay infiniteLoop showArrows showStatus={false} showIndicators={false} centerMode centerSlidePercentage={33.33} emulateTouch>
                 {Icons.map((item, index) => {
                     return <div key={index}>
-                        <img src={item.adres} alt="1"/>
+                        <img className="imgSlideShow" src={item.adres} alt="1"/>
                         <p className="legend">{item.title}</p>
                     </div>
                 })}
